@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message| By: Ishmael Sunday</title>
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+
+  <main class="wrapper">
+    <div id="main-content">
+      <div class="container">
+        <picture>
+          <source media="(min-width: 42.25rem)" srcset="assets/images/illustration-sign-up-desktop.svg">
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="page-img">
+        </picture>
+
+        <div class="content">
+          <h1 class="h1-title">Stay updated!</h1>
+          <p class="lead-text">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="updates-list">
+            <li class="list-item"><img src="assets/images/icon-list.svg" alt="" class="icon-img"><span
+                class="list-item-text">Product discovery and building what matters</span></li>
+            <li class="list-item"><img src="assets/images/icon-list.svg" alt="" class="icon-img"><span
+                class="list-item-text">Measuring to ensure updates are a success</span></li>
+            <li class="list-item"><img src="assets/images/icon-list.svg" alt="" class="icon-img"><span
+                class="list-item-text">And much more!</span></li>
+          </ul>
+
+
+
+          <form id="form" onsubmit="return submitForm(event)">
+            <div class="labels">
+              <label for="email" class="email-label">Email address</label>
+              <span id="error-message"></span>
+            </div>
+            <input type="text" name="email" id="email" required placeholder="email@company.com">
+            <button type="submit" id="submit" class="btn">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="hidden-msg">
+      <div id="s-msg" class="success-container">
+        <div class="success-msg">
+          <img src="assets/images/icon-success.svg" alt="" class="success-icon">
+          <h1 class="h1-title">Thanks for subscribing!</h1>
+          <p>A confirmation email has been sent to <span id="success-email"></span>. Please open it and click the
+            button inside to confirm your subscription.</p>
+        </div>
+        <button onclick="dismissSuccessMsg()" id="dismiss-btn" class="btn"> Dismiss message</button>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
