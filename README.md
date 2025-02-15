@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](assets/images/screenshot-newsletter.png)
+![](assets/images/Screenshot-newsletter.png)
 
 ### Links
 
