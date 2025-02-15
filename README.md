@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/okayishmael/newsletter-sign-up-with-success-message)
-- Live Site URL: [Github Live Page](https://okayishmael.github.io/newsletter-sign-up-success-message)
+- Live Site URL: [Github Live Page](https://okayishmael.github.io/newsletter-sign-up-with-success-message)
 
 ## My process
 
